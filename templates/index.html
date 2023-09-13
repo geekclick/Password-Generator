@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Fast and Secure Password for your Accounts</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="text-light mb-1 h1" role="button" onclick="location.href='/'">Pass<span class="text-primary">Key <i class="fa-solid fa-key fa-md text-warning"></i></span></h1>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="title">
+            <img src="/static/images/user-shield-solid.svg" alt="user-sheild">
+            <h2><span class="text-primary">Safeguarding</span> Your Online Life</h2>
+            <p>Create Strong and Secure Passwords Instantly! Our Password Generator is your go-to tool for
+                generating robust and unique passwords. Get started now and fortify your digital life with ease.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <p id="note" class="text-light text-center fs-6 fw-lighter">Click on Password to Copy!</p>
+        <div class="pass-box">
+            <h2 id="mypass" onclick="copyText()">{{password}}</h2>
+        </div>
+        <div class="form-box bg-light">
+            <form class="multi-range-field" action="/" method="post">
+                <h2>Customize your password</h2>
+                <div>
+                    <label for="multi6">Password Length</label>
+                    <div class="len-box">
+                        <input id="numlen" type="text" value="{{length}}">
+                        <input id="multi6" class="multi-range" name="length" min="4" max="50" type="range"
+                            value="{{length}}" />
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="digits" id="digits" {{check1}}>
+                        <label for="digits">Digits</label>
+                        <input type="checkbox" name="char" id="char" {{check2}}>
+                        <label for="char">Special Character</label>
+                        <input type="submit" value="Generate Now" id="submit" class="btn btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="info-box my-5 px-4">
+        <h2>More About us:</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto expedita voluptate eaque at
+            voluptatibus magni voluptates ex consectetur in fugit dicta doloribus dolore, consequatur, facere vitae
+            vero itaque commodi! Natus, molestias animi. Obcaecati nam possimus quisquam praesentium pariatur
+            deserunt modi rerum quis corporis molestiae. In hic quae, quas quod blanditiis saepe possimus
+            doloremque, quis deleniti sint, mollitia laborum neque cum ut! Enim, velit officiis fugiat sed ipsa,
+            nulla iste eius maiores, itaque quasi temporibus sunt nihil illum repellat? Consequuntur ab maiores
+            nobis vel eveniet? Nobis temporibus cupiditate quibusdam, corrupti, labore illum ipsa at recusandae
+            deserunt repudiandae veritatis? Repellat, id esse!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, id. Temporibus praesentium quae
+            commodi ab, sequi natus possimus amet consequatur ullam dignissimos perspiciatis quis eius nesciunt
+            fugiat tempora omnis sapiente quos vel quasi sit alias officiis! Labore cupiditate temporibus, excepturi
+            ipsum, nesciunt molestiae reprehenderit at sunt ipsa laboriosam minima accusantium?</p>
+    </div>
+    <footer class="text-center text-white mt-4" style="background-color: #212529;">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+
+        <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-light" href="https://mdbootstrap.com/">PassKey.com</a>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
