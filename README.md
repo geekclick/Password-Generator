@@ -19,12 +19,13 @@ This project is a simple web-based password generator built with Flask, a Python
 4. Activate the virtual environment:
 
     On Windows:
-    ```bash
+    ```
     venv\Scripts\activate
-
-    On macOS and Linux:
-    ```bash
+    ```
+    On macOS and Linux
+    ```
     source venv/bin/activate
+    ```
 
 5. Install the project dependencies:
 
