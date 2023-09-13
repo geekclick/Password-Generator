@@ -1,6 +1,6 @@
 # Password Generator using Flask
 
-This project is a simple web-based password generator built with Flask, a Python web framework. It allows users to generate random passwords with customizable settings such as password length and the inclusion of special characters and digits.
+This project is a simple web-based password generator built with Flask, a Python web framework. It allows users to generate random and strong passwords with customizable settings such as password length and the inclusion of special characters and digits.
 
 ## Installation
 
