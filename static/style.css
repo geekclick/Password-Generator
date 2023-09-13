@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300&family=Rajdhani&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container1{
+    padding: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.title{
+    padding: 1.5rem;
+    font-size: .7rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.title h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.title p{
+    max-width: 500px;
+    margin: auto;
+}
+.title img{
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.form-box{
+    height: fit-content;
+    margin: 1rem;
+    padding: 1.8rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+}
+
+.form-box h2{
+    padding-bottom: .5rem;
+    border-bottom: .1px solid grey;
+}
+
+.len-box{
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: .4rem;
+}
+.len-box #numlen{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    padding: .9rem .4rem;
+    border-radius: .4rem;
+}
+#digits,#char{
+    margin: 1rem .1rem;
+}
+
+#submit{
+    margin-top: .5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pass-box{
+    word-wrap: break-word;
+    background-color: rgb(242, 245, 246);
+    padding: 1rem;
+    text-align: center;
+    border: .1px solid grey;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+.pass-box h2{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container2{
+    background-color: #28292a;
+    padding: 1rem;
+}
+
+.info-box p{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+@media screen and (min-width: 780px) {
+    .title{
+        font-size: .9rem;
+    }
+    .check-box{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .title{
+        font-size: 1rem;
+    }
+    /* main{
+        margin: auto;
+        max-width: 1000px;
+    } */
+    .container1{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .info-box,.pass-box,.form-box{
+        max-width: 930px;
+        margin: 2rem auto;
+
+    }
+}
