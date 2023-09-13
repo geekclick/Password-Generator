@@ -42,7 +42,7 @@ On macOS and Linux:
 
 3. Specify the desired password length and choose whether to include special characters and digits.
 
-4. Click the "Generate Password" button to generate a password.
+4. Click the "Generate Now" button to generate a password.
 
 5. Copy the generated password to use it.
 
